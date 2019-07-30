@@ -13,7 +13,7 @@ permalink: /questions/html-questions/index.html
 * What are `data-` attributes good for?
 * => 可以記錄不太會變動的資料
 * Consider HTML5 as an open web platform. What are the building blocks of HTML5?
-* => Semantics Tag、<video> <audio> tag、canvas、Web Worker、canvas and SVG、Offline Storage
+* => Semantics Tag、<video> <audio> tag、Web Worker、canvas and SVG、Offline Storage
 * Describe the difference between a `cookie`, `sessionStorage` and `localStorage`.
 * => cookie: 生命週期有時效性，大小只有4KB，一般應用在帳戶自動登入。
 * => sessionStorage: 當頁面關掉資料就沒了，大小有4MB，一般應用在填表單。
