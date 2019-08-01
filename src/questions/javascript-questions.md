@@ -21,9 +21,15 @@ permalink: /questions/javascript-questions/index.html
     * 有賦值的undeclared變數需當成全域變數看，沒賦值會報錯
     * undefined和null都是變數的值，不過undefined的type就是undefined，null則是object
 * What is a closure, and how/why would you use one?
+  * 閉包是函式記得並存取語彙範疇的能力，可說是指向特定範疇的參考，因此當函式是在其宣告的語彙範疇之外執行時也能正常運作。
 * What language constructions do you use for iterating over object properties and array items?
+  * for      :直接對array[index]更改
+  * for...in :可以把屬性都跑過一遍(連繼承來的都是)
+  * forEach  :只能對array用,後面接callback func(value, index ,arr)
 * Can you describe the main difference between the `Array.forEach()` loop and `Array.map()` methods and why you would pick one versus the other?
+  * Array.map()比較侷限用在更改array值的時候，且一定會回傳一個矩陣；Array.forEach()相對自由，不用回傳，只要針對矩陣操作就行。
 * What's a typical use case for anonymous functions?
+  * Use as an argument to other functions, IIFE`(function(message) {alert(message);}('foo'));`
 * What's the difference between host objects and native objects?
 * Explain the difference between: `function Person(){}`, `var person = Person()`, and `var person = new Person()`?
 * Explain the differences on the usage of `foo` between `function foo() {}` and `var foo = function() {}`
