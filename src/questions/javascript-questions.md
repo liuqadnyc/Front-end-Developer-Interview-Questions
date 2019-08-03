@@ -35,10 +35,16 @@ permalink: /questions/javascript-questions/index.html
     *  (assuming browser environment): window, document, location, history, XMLHttpRequest, setTimeout, getElementsByTagName, querySelectorAll, ..
   * native objects: 是原本內建的，不分環境的
     *  Object (constructor), Date, Math, parseInt, eval, string methods like indexOf and replace, array methods, ...
-* Explain the difference between: `function Person(){}`, `var person = Person()`, and `var person = new Person()`?
+* Explain the difference between: `function Person(){}`, `var person = function(){}`, and `var person = new Person()`?
+  * `function Person(){}`:Function Declaration
+  * `var person = function(){}`:Function Expression
+  * `var person = new Person()`:Function Constructor
 * Explain the differences on the usage of `foo` between `function foo() {}` and `var foo = function() {}`
+  * 前者會提升整個宣告，後者只會提升變數。
 * Can you explain what `Function.call` and `Function.apply` do? What's the notable difference between the two?
+  * 兩者都是用來指定this的值，差別只在傳完this值後的參數一個是分開傳一個是用陣列傳。
 * Explain `Function.prototype.bind`.
+  * 把this值做綁定，卻不立刻執行function
 * What's the difference between feature detection, feature inference, and using the UA string?
 * Explain "hoisting".
 * Describe event bubbling.
