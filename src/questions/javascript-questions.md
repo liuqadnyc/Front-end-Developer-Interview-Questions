@@ -31,6 +31,10 @@ permalink: /questions/javascript-questions/index.html
 * What's a typical use case for anonymous functions?
   * Use as an argument to other functions, IIFE`(function(message) {alert(message);}('foo'));`
 * What's the difference between host objects and native objects?
+  * host objects: 為了完成特定環境任務而產生的物件，像在browser是window而server(node.js)是Nodelist
+    *  (assuming browser environment): window, document, location, history, XMLHttpRequest, setTimeout, getElementsByTagName, querySelectorAll, ..
+  * native objects: 是原本內建的，不分環境的
+    *  Object (constructor), Date, Math, parseInt, eval, string methods like indexOf and replace, array methods, ...
 * Explain the difference between: `function Person(){}`, `var person = Person()`, and `var person = new Person()`?
 * Explain the differences on the usage of `foo` between `function foo() {}` and `var foo = function() {}`
 * Can you explain what `Function.call` and `Function.apply` do? What's the notable difference between the two?
